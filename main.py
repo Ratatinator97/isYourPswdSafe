@@ -16,7 +16,7 @@ if __name__ == '__main__':
         userPassword = input("Please type your password :")
         count = 0
         for i in range(4):
-            if (not compareWithDict(userPassword, (i - 1))):
+            if (not compareWithDict(userPassword, i)):
                 count = count + 1
                 print("The password has been found on the current database")
         print("The password has been found on " + str(count) + " databases")
